@@ -39,32 +39,55 @@ Students must use the CD version control branching scheme, where the version con
 
 4.3 Testing
 Each team should provide unit integration, and stress tests to their final application.
+
 -	Unit tests are in the form of testing the functionality of each function of your program (when applicable).
+
 -	Integration testing will be testing the entire system integrated.
+
 -	Stress testing will be writing a user simulation to prove that your application can handle 1000 requests per minute.
 
 4.4 Automation
 The students are to use Jenkins for automating the building, testing, deployment and release (if applicable) of the application. At the end, each team is expected to have a Jenkins pipeline constructed which connects to the different github branches, and applies appropriate respective actions:
+
 •	build and run unit tests on feature branches.
+
 •	stress test and push to release on the develop branch
+
 •	wait for user acceptance on the release branch before pushing to master
+
 •	deploy on merging with master
 
 **note: as it might not be possible to have multiple development environments (develop, staging, live), relasing/deploying the code can be substituted with simple print statements.
 
  4.5 Containarization
-The final application deliverable should be a Docker image, that contains the pre-trained model as well as the application web interface. The twitter dataset should also be bundled with the application. Running a container off the delivered image should allow users to view a web interface on their browser and be able to immediately start running queries.
+ 
+The final application deliverable should be a Docker image, that contains the pre-trained model as well as the application web interface. The twitter dataset should also be
+
+bundled with the application. Running a container off the delivered image should allow users to view a web interface on their browser and be able to immediately start running
+
+queries.
 
 4.6 Monitoring
+
 The students are to use Prometheus to monitor:
+
 •	Hardware metrics: like CPU usage, memory usage, and disk space usage.
+
 •	Software metrics: integrate different software metrics inside your application to monitor information like response time, user requests count, exceptions, 
 Integrate Counters, Gauges, Histograms and Summaries as you see fit.
+
 Add rules and alerts where you see fit, here are some examples:
+
 •	Alert before running out of memory
+
 •	Alert when cpu usage is very high
+
 •	Alert when your code raises an exception
+
 •	Alert when your system is down for more than a specific period of time
 •	…
+
 Use Grafana as the monitoring dashboard.
+
+
 One nice example to have is to visualize the different monitored metrics during the stress test.

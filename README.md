@@ -1,5 +1,6 @@
 # DataEng-Final-Project
- Project Summary As a part of the curriculum of the Master 2 (M2) course entitled “Data Engineering II”, the students will complete a team project work. Each team is composed of 2 members, and the members will take care of dividing the tasks equally between them. The purpose of this project is to combine all the skills collected throughout the entire course, and to provide a solid example of real-life application development in a DevOps environment.
+ Project Summary 
+ As a part of the curriculum of the Master 2 (M2) course entitled “Data Engineering II”, the students will complete a team project work. Each team is composed of 2 members, and the members will take care of dividing the tasks equally between them. The purpose of this project is to combine all the skills collected throughout the entire course, and to provide a solid example of real-life application development in a DevOps environment.
 1. User Stories
 •	The application is a Twitter search application, where the user inputs a search string, and the application returns the top 20 tweets which are similar to the search string.
 •	The text language used must be English
@@ -16,12 +17,14 @@
 The students will use word embedding models to facilitate similarity searches. I.e: the word embeddings of the search string are compared with those of the available tweets (using which ever distance algorithm the students choose, like eucledian distance for example) and the top 20 similar tweets are chosen.
 The students are free to choose whichever word embedding model they choose, like Fasttext, Doc2Vec, Word2Vec…
 **note: a reminder to handle all the cleaning and pre-processing of the text.
+
 3.2 The Web Interface
 The students are free to choose whichever technology they know/like to create the web insterface. The end result should be a running application which the end user can access through a web browser, and start using immediately.
 
 
 3.3 The Application Package
 The final format of the application ready for distribution should be a Docker Image, which administrators can simply run Containers from. Students should provide a description file with their submitted application in which whey describe how to run their image (like providing on which port does the application run by default…).
+
 4. Technical Requirements
 The students are to use the following technologies and steps throughout their implementation:
 4.1 Task Management

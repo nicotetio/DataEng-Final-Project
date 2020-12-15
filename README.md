@@ -13,6 +13,7 @@
 2. Application Overview
  
 3. Technical Description
+
 3.1 The Similarity Search
 The students will use word embedding models to facilitate similarity searches. I.e: the word embeddings of the search string are compared with those of the available tweets (using which ever distance algorithm the students choose, like eucledian distance for example) and the top 20 similar tweets are chosen.
 The students are free to choose whichever word embedding model they choose, like Fasttext, Doc2Vec, Word2Vec…

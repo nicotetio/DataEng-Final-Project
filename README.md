@@ -17,6 +17,7 @@
 3.1 The Similarity Search
 The students will use word embedding models to facilitate similarity searches. I.e: the word embeddings of the search string are compared with those of the available tweets (using which ever distance algorithm the students choose, like eucledian distance for example) and the top 20 similar tweets are chosen.
 The students are free to choose whichever word embedding model they choose, like Fasttext, Doc2Vec, Word2Vec…
+
 **note: a reminder to handle all the cleaning and pre-processing of the text.
 
 3.2 The Web Interface
@@ -28,25 +29,32 @@ The final format of the application ready for distribution should be a Docker Im
 
 4. Technical Requirements
 The students are to use the following technologies and steps throughout their implementation:
+
 4.1 Task Management
 Each team is to use a project management tool of their choice (Trello, Asana, Jira…) to coordinate the tasks between the team members. Divide the user stories into tasks, list these tasks on the project manager, and track the progress of each task as it progresses. Each team is required to present their project management history during their presentation.
+
 4.2 Source Code Management
 Each team is required to create a github repository containing their project, and use it as their version control. Each new task should have its own branch on the github repository. At every task completion (from the project manager), the associated team member should merge their task’s branch to the master branch. The github repository should contain all your files, including the docker file and any meta data files (like the python requirements.txt if it exists).
 Students must use the CD version control branching scheme, where the version control repository will contain a master branch, a develop branch, a feature branch (for every added feaure) and a release branch (for every version release).
+
 4.3 Testing
 Each team should provide unit integration, and stress tests to their final application.
 -	Unit tests are in the form of testing the functionality of each function of your program (when applicable).
 -	Integration testing will be testing the entire system integrated.
 -	Stress testing will be writing a user simulation to prove that your application can handle 1000 requests per minute.
+
 4.4 Automation
 The students are to use Jenkins for automating the building, testing, deployment and release (if applicable) of the application. At the end, each team is expected to have a Jenkins pipeline constructed which connects to the different github branches, and applies appropriate respective actions:
 •	build and run unit tests on feature branches.
 •	stress test and push to release on the develop branch
 •	wait for user acceptance on the release branch before pushing to master
 •	deploy on merging with master
+
 **note: as it might not be possible to have multiple development environments (develop, staging, live), relasing/deploying the code can be substituted with simple print statements.
+
  4.5 Containarization
 The final application deliverable should be a Docker image, that contains the pre-trained model as well as the application web interface. The twitter dataset should also be bundled with the application. Running a container off the delivered image should allow users to view a web interface on their browser and be able to immediately start running queries.
+
 4.6 Monitoring
 The students are to use Prometheus to monitor:
 •	Hardware metrics: like CPU usage, memory usage, and disk space usage.
